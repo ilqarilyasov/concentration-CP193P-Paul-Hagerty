@@ -39,6 +39,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821EC81422383A3F00036822 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82917608213792580033B750 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		821EC81522383A5100036822 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8284891E2113261D00B9E884 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		821EC81622383A5B00036822 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				829176062137914E0033B750 /* Concentration.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		821EC81722383A7700036822 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				828489202113261D00B9E884 /* Main.storyboard */,
+				828489252113261E00B9E884 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		828489102113261D00B9E884 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +91,11 @@
 		8284891B2113261D00B9E884 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				821EC81422383A3F00036822 /* Models */,
+				821EC81622383A5B00036822 /* Model Controllers */,
+				821EC81522383A5100036822 /* View Controllers */,
+				821EC81722383A7700036822 /* Storyboards */,
 				8284892E2113279800B9E884 /* Supporting Files */,
-				8284891E2113261D00B9E884 /* ViewController.swift */,
-				829176062137914E0033B750 /* Concentration.swift */,
-				82917608213792580033B750 /* Card.swift */,
-				828489202113261D00B9E884 /* Main.storyboard */,
-				828489282113261E00B9E884 /* Info.plist */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -73,7 +105,7 @@
 			children = (
 				8284891C2113261D00B9E884 /* AppDelegate.swift */,
 				828489232113261E00B9E884 /* Assets.xcassets */,
-				828489252113261E00B9E884 /* LaunchScreen.storyboard */,
+				828489282113261E00B9E884 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +142,7 @@
 				TargetAttributes = {
 					828489182113261D00B9E884 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -300,7 +333,7 @@
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7274K2JH7M;
-				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Concentration/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilgarilyasov.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -322,7 +355,7 @@
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7274K2JH7M;
-				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Concentration/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilgarilyasov.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

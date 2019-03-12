@@ -23,7 +23,7 @@ class ViewController: UIViewController
     }
     
     private func updateFlipCountLabel() {
-        let attributes: [NSAttributedStringKey:Any] = [
+        let attributes: [NSAttributedString.Key:Any] = [
             .strokeWidth: 5.0,
             .strokeColor: #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
         ]
@@ -53,16 +53,15 @@ class ViewController: UIViewController
             let button = cardButtons[index]
             let card = game.cards[index]
             if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: UIControlState.normal)
+                button.setTitle(emoji(for: card), for: .normal)
                 button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             } else {
-                button.setTitle("", for: UIControlState.normal)
+                button.setTitle("", for: .normal)
                 button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 0) : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
             }
         }
     }
-    
-    //private var emojiChoice = ["🎃", "👻", "🦋", "🦊", "🦇", "🦄", "🐣", "🍇", "🍎"]
+
     private var emojiChoice = "🎃👻🦋🦊🦇🦄🐣🍇🍎🍬🍭"
 
     private var emoji = [Card:String]()
