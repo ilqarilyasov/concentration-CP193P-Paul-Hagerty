@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController
-{
+class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        newGameButton.isHidden = true
+    }
+    
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int {
-            return (cardButtons.count + 1)/2
+        return (cardButtons.count + 1)/2
     }
     
     private(set) var flipCount = 0 {
@@ -36,6 +41,7 @@ class ViewController: UIViewController
             updateFlipCountLabel()
         }
     }
+    
     @IBOutlet private var cardButtons: [UIButton]!
     
     @IBAction private func touchCard(_ sender: UIButton) {
@@ -44,8 +50,14 @@ class ViewController: UIViewController
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
         } else {
-            print("Chosen card is not in the cardButtons")
+            NSLog("Chosen card is not in the cardButtons")
         }
+    }
+    
+    @IBOutlet weak var newGameButton: UIButton!
+    
+    @IBAction func startNewGame(_ sender: Any) {
+        game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     }
     
     private func updateViewFromModel() {

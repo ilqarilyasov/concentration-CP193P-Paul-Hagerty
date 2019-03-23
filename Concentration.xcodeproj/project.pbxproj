@@ -14,6 +14,7 @@
 		828489272113261E00B9E884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828489252113261E00B9E884 /* LaunchScreen.storyboard */; };
 		829176072137914E0033B750 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829176062137914E0033B750 /* Concentration.swift */; };
 		82917609213792580033B750 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82917608213792580033B750 /* Card.swift */; };
+		82D4CB6E2245F08A00B1B5B3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 82D4CB6D2245F08A00B1B5B3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		828489282113261E00B9E884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829176062137914E0033B750 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		82917608213792580033B750 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		82D4CB6D2245F08A00B1B5B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				8284891E2113261D00B9E884 /* ViewController.swift */,
+				82D4CB6D2245F08A00B1B5B3 /* README.md */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				828489272113261E00B9E884 /* LaunchScreen.storyboard in Resources */,
 				828489242113261E00B9E884 /* Assets.xcassets in Resources */,
+				82D4CB6E2245F08A00B1B5B3 /* README.md in Resources */,
 				828489222113261D00B9E884 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
